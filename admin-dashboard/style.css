@@ -1,0 +1,263 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    resize: both;
+    overflow: auto;
+    display: grid;
+    min-width: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    gap: none;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(6,  1fr);
+}
+
+#sidebar {
+    background: pink;
+    grid-row-start: 1;
+    grid-row-end: 11;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar-header {
+    font-size: 2em;
+    margin-left: 10px;
+}
+
+#sidebar > ul {
+    list-style-type: none;
+}
+
+#sidebar > ul > li {
+    margin: 14px 0px;
+    font-size: 1.3em;
+}
+
+.sidebar-item:hover {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* header section */
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: white;
+    grid-area: 1 / 2 / 3 / 7;
+}
+
+#header-top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#search-bar {
+    border-radius: 20px;
+    box-shadow: 4px 4px lightgrey;
+    height: 3em;
+    margin: 0px 20px;
+}
+
+.fa-magnifying-glass {
+    margin-left: 6px;
+    font-size: 2em;
+}
+
+#admin-container {
+    margin: 0px 20px;
+}
+
+/* Dropdown Button Section
+Taken from  https://www.w3schools.com/howto/howto_css_dropdown.asp */
+.dropbtn {
+    background-color: pink;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+#lang-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* inside the dropdown */
+.dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content p:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+#lang-dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+#lang-dropdown:hover .dropbtn {background-color: black;}
+
+/* END language button section */
+
+#main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#my-name {
+    margin: 30px;
+    font-size: 4em;
+}
+
+.header-button {
+    background: pink;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    margin: 8px;
+    box-shadow: 5px 5px;
+}
+
+.header-button:hover {
+    background: black;
+    color: pink;
+}
+
+/* END header section */
+
+/* content section */
+#main-content {
+    /* how it fits in the container */
+    grid-area: 3 / 2 / 11 / 7;
+    background: lightgray;
+    /* internal grid properties*/
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4,  1fr);
+}
+
+.content-section {
+    margin: 5px;
+}
+
+/* project subsection */
+#project-section {
+    grid-area: 1 / 1 / 5 / 4;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+}
+
+#projects-header {
+    padding: 10px;
+    font-size: 2em;
+}
+
+#project-card-container {
+    grid-row: 2 / 8;
+    display: grid;
+    gap: 5px;
+    margin-bottom: 12px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.section-card {
+    background: white;
+    margin: 7px;
+    border-left: 3px solid pink;
+    border-radius: 12px;
+    box-shadow: 5px 10px darkslategray;
+}
+
+.project-card {
+    max-height: 220px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.project-card > h4, p {
+    padding: 4px;
+}
+
+.project-desc {
+    grid-row: 2 / 5;
+}
+
+.icon-box {
+    text-align: right;
+    bottom:0;
+}
+
+i {
+    padding: 3px;
+    font-size: 1.4em;
+}
+
+.icon-box > i:hover {
+    font-size: 1.8em;
+}
+
+/* END project subsection */
+
+#announcement-section {
+    grid-area: 1 / 4 / 3 / 5;
+    max-height: 500px;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+}
+
+#announcement-card {
+    grid-row: 2 / 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.announcement {
+    max-height: 20%;
+}
+
+.announcement:nth-of-type(2n) {
+    background-color: lightgray;
+}
+
+.announcement-head {
+    font-weight: bold;
+}
+
+#trending-section {
+    grid-area: 3 / 4 / 5 / 5;
+    max-height: 500px;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+}
+
+/* END content section */

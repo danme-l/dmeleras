@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/ba6c5b1f7d.js" crossorigin="anonymous"></script>
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <header>
+        <h1> Rock, Paper, Scissors</h1>
+    </header>
+    
+    <main>
+        <div class="selections">
+            <button class="selectionButton" id="rock">Rock</button>
+            <button class="selectionButton" id="paper">Paper</button>
+            <button class="selectionButton" id="scissors">Scissors</button>    
+        </div>
+
+        <div id="roundSection">
+            <h3 id="roundResults">Click one of the buttons to play!</h3>
+            
+            <div id="scoreboard">
+                <div class="scoreContainer" id="playerScoreBox">
+                    <p>Player Score:</p>
+                    <p id="playerScoreLabel">0</p>
+                </div>
+                <div class="scoreContainer" id="computerScoreBox">
+                    <p>Computer Score:</p>
+                    <p id="computerScoreLabel">0</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="resultsSection">
+            <h2 id="winnerLabel"></h2>
+            <h4 id="finalScore"></h4>
+        </div>
+    </main>
+
+    <footer  id="footer">
+        <h4>Dan Meleras <a href="https://github.com/danme-l"><i class="fa-brands fa-github"></i></a></h4>
+        <p>As part of the Odin Project Web Dev Curriculum</p>
+    </footer>
+
+    
+
+    <script src="game.js"></script>    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="flex-container">
+        <div id="logo-section">
+            <div id="logo-bar">
+                <img id="odin-logo" src="images/odin-lined.png">
+                <h1>The Odin Project</h1>
+            </div>            
+        </div>
+        <div id="form-section">
+            <h3 id="form-section-header">
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.<br /><br />
+                You know you want to.
+            </h3>
+            <form>
+                <div id="input-container">
+                    <div class="input-section">
+                        <label for="first-name">First Name</label>    
+                        <input type="text" id="first-name" required> 
+                    </div>
+                    <div class="input-section">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" required> 
+                    </div>
+                    <div class="input-section">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" required> 
+                    </div>
+                    <div class="input-section">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" required> 
+                    </div>
+                    <div class="input-section">
+                        <label for="pw1">Password</label>
+                        <input type="password" id="pw1" minlength="8" required> 
+                    </div>
+                    <div class="input-section">
+                        <label for="pw2">Reenter Password</label>    
+                        <input type="password" id="pw2" minlength="8" required> 
+                    </div>     
+                </div>
+                <button id="submit-button" type="submit">Submit!</button>
+            </form>
+        </div>   
+    </div>     
+</body>
+</html>

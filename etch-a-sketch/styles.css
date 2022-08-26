@@ -1,0 +1,106 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+    --primary: lightblue;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--primary);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    font-size: 30px;
+}
+
+.configs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.configButton {
+    width: 100%;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 8px;
+}
+
+.configButton:active {
+    color: white;
+    background-color: black;
+}
+
+.mode:focus {
+    color: white;
+    background-color: black;
+}
+
+#goButton {
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: 0 auto;
+}
+
+#gridContainer {
+    display: grid;
+    margin: 10px 50px;
+    width: 650px;
+    height: 650px;
+    border: 12px solid darkblue;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 20px 30px 20px;
+}
+
+.gridBox {
+    text-align: center;
+    background-size: cover;
+}
+
+.gridSizeChange {
+    border: 1px solid lightgrey;
+}
+
+footer {
+    text-align: center;
+    bottom:0;
+    width:100%;
+ }
+
+.fa-brands {
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-brands:hover {
+    transform: rotate(360deg);
+  }
+
+@media (max-width: 1200px) {
+    main {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 850px) {
+    main {
+      gap: 50px;
+    }
+  
+    .grid {
+      width: 400px;
+      height: 400px;
+    }
+  }

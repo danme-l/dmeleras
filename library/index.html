@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/ba6c5b1f7d.js" crossorigin="anonymous"></script>
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <h1>Library</h1>
+        <div id="header-button-box">
+            <button class="header-button" id="add-book-button">Add Book!</button>
+            <button class="header-button" id="add100">Add 100 Books!</button>
+            <button class="header-button" id="clear-button">Empty the Library...</button>
+        </div>
+        
+    </header>
+    <main>
+        <div id="add-book-modal">
+            <div id="modal-content">
+                <div id="modal-header">
+                    <h3>New Book</h3>
+                    <button id="modal-close">&times;</button>
+                </div>         
+                <form>
+                    <label for="new-book-title">Title</label><br />
+                    <input type="text" name="new-book-title" id="new-book-title"><br />
+                    <label for="new-book-author">Author</label><br />
+                    <input type="text" name="new-book-author" id="new-book-author"><br />
+                    <label for="new-book-pages">Pages</label><br />
+                    <input type="number" name="new-book-pages" id="new-book-pages"><br />
+                    <label for="new-book-read">Book Read?</label> 
+                    <input type="checkbox" name="new-book-read" id="new-book-read"><br />
+                    <button id="modal-submit">Submit</button>
+                </form>
+            </div>
+            
+        </div>
+        <div id="book-display-container">
+            <div id="book-display">
+        </div>
+        
+
+        </div>
+    </main>
+    <script src="./script.js"></script>
+    
+</body>
+</html>

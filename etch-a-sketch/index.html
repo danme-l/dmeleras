@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/ba6c5b1f7d.js" crossorigin="anonymous"></script>
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+
+    <header> 
+        <h1>Etch-a-Sketch</h1>
+    </header>
+
+    <main>
+        <div id="gridConfigs" class="configs">
+            <input id="colorPicker" type="color" value="#333333" />
+            <button type="button" id="resetButton" class="configButton" onclick="resetGrid();"> Blank Grid</button>
+            <label id="widthLabel">Width:</label>
+            <input id="widthConfig" type="text" placeholder="16">
+            <label id="heightLabel">Height:</label>
+            <input id="heightConfig" type="text" placeholder="16">
+            <button type="button" id="goButton"  class="configButton" onclick="resetGrid();"> Go!</button>
+        </div>
+
+        <div id="gridContainer"></div>
+
+        <div id="colorConfigs" class="configs">
+            <button type="button" id="blackButton" class="configButton mode" onclick="changeColorMode('black');">Black</button>
+            <button type="button" id="rainbowButton" class="configButton mode" onclick="changeColorMode('rainbow');">Rainbow</button>
+            <button type="button" id="lightenButton" class="configButton mode" onclick="changeColorMode('lighten');">Lighten</button>
+            <button type="button" id="darkenButton" class="configButton mode" onclick="changeColorMode('darken');">Darken</button>
+            <button type="button" id="owButton" class="configButton mode" onclick="changeColorMode('owenWilson');">Wow</button>
+            <button type="button" id="eraseButton" class="configButton mode" onclick="changeColorMode('eraser');">Erase</button>
+        </div>
+    </main>
+
+    <footer  id="footer">
+        <h4>Dan Meleras <a href="https://github.com/danme-l"><i class="fa-brands fa-github"></i></a></h4>
+        <p>As part of the Odin Project Web Dev Curriculum</p>
+    </footer>
+
+    <script src="etchASketch.js"></script>    
+</body>
+</html>
