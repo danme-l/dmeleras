@@ -1,5 +1,5 @@
 # dmeleras
-Personal website version 1!
+[Personal website version 1!](https://danme-l.github.io/dmeleras/index.html)
 
 First version of a personal website created in basic HTML, CSS, JS for hobby programming/learning. It's got links to projects I've been working on through [The Odin Project](https://www.theodinproject.com/) and [free code camp](https://www.freecodecamp.org/learn/).
 
