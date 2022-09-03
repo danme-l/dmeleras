@@ -1,0 +1,77 @@
+:root {
+    --main-color: lightblue;
+    --second-color: darkslategray;
+    --main-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body , header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+}
+
+button, option {
+    font-family: var(--main-font);
+}
+body {
+    margin: 0;
+    background-color: var(--main-color);
+}
+
+header {
+    background-color: var(--second-color);
+    max-height: min(10%, 10px);
+    width: 100%;
+}
+
+
+
+/* Board section */
+#board {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(3, 100px);
+    margin-top: 30px;
+}
+
+.square {
+    background:var(--second-color);
+    border: 5px solid black;
+    font-size: 4em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Control Panel  */
+#game-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reset-button {
+    visibility: hidden;
+}
+
+.control-button {
+    padding: 10px;
+    margin: 10px;
+}
+
+#XO-select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.player-box {
+    padding: 10px;
+    text-align: center;
+}
+
+.active-turn {
+    background-color: red;
+}

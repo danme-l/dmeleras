@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="/static/tic-tac-toe.png">
+    <!-- Icon Source: https://www.flaticon.com/free-icons/tic-tac-toe -->
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <header>
+        <h1 id="game-header">Tic Tac Toe</h1>
+        <div id="game-control">
+            <div id="XO-select">
+                <div id="x-box" class="player-box">
+                    <h2> X </h2>
+                    <select name="x-select" id="x-select" class="custom-select">
+                        <option>Human</option>
+                        <option>CPU</option>
+                    </select>
+                </div>            
+                <div id="o-box" class="player-box">
+                    <h2> O </h2>        
+                    <select name="o-select" id="o-select" class="custom-select">
+                        <option>CPU</option>
+                        <option>Human</option>
+                    </select>         
+                </div>    
+            </div>
+            <button id="start-button" class="control-button">Launch Game</button>
+            <button id="reset-button" class="control-button">Reset!</button>
+        </div>        
+    </header>
+
+    <div id="board">
+
+    </div>    
+    <div id="winner"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
