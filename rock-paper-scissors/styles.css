@@ -70,17 +70,23 @@ body, main {
     text-shadow: 0 0 .5rem black;
 }
 
-footer {
-    text-align: center;
-    position:absolute;
-    bottom:0;
-    width:100%;
- }
-
-.fa-brands {
+.project-footer {
+    border-top: 2px solid var(--second-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    line-height: 60%;
+    margin-top: 20px;
+}
+.fa-brands, .fa-circle-left {
     transition: transform 0.3s ease-in-out;
 }
 
 .fa-brands:hover {
     transform: rotate(360deg);
-  }
+}
+
+.fa-circle-left:hover {
+    transform: rotate(360deg);
+}

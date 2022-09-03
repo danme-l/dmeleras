@@ -22,17 +22,17 @@ body {
 
 header {
     background-color: var(--second-color);
-    max-height: min(10%, 10px);
+    height: min(10%, 10px);
     width: 100%;
+    flex-shrink: 2;
 }
-
-
 
 /* Board section */
 #board {
     display: grid;
     grid-template: repeat(3, 100px) / repeat(3, 100px);
-    margin-top: 30px;
+    margin: 30px;
+    flex: 1 0 auto;
 }
 
 .square {
@@ -72,6 +72,23 @@ header {
     text-align: center;
 }
 
-.active-turn {
-    background-color: red;
+.project-footer {
+    border-top: 2px solid var(--second-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    line-height: 60%;
+    margin-top: 20px;
+}
+.fa-brands, .fa-circle-left {
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-brands:hover {
+    transform: rotate(360deg);
+}
+
+.fa-circle-left:hover {
+    transform: rotate(360deg);
 }

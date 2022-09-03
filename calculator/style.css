@@ -1,5 +1,7 @@
 :root {
     font-size: 20px;
+    --main-color: lightblue;
+    --second-color: darkslategray;
 }
 
 html {
@@ -18,7 +20,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 15px solid red;
+    border: 15px solid var(--main-color);
     padding: 10px;
     border-radius: 15px;
     height: 500px;
@@ -26,13 +28,13 @@ body {
 
 #screen {
     color: white;
-    background-color: gray;
+    background-color: var(--second-color);
     font-family: 'Courier New', Courier, monospace;
     text-align: right;
     width: 89%;
     height: 10%;
     margin: 10px;
-    border: 2px solid red;
+    border: 2px solid var(--main-color);
     border-radius: 5px;
     word-wrap: break-word;
     word-break: break-all;
@@ -82,30 +84,33 @@ body {
 
 .btn {
     padding: 20px;
-    border: 2px solid red;
+    border: 2px solid var(--main-color);
     border-radius: 5px;
     font-size: 20px;
 }
   
 .btn:hover {
-    background-color: darkred;
+    background-color: var(--second-color);
 }
 
 #info-box {
     margin: 20px;
-    border: 15px solid red;
+    border: 15px solid var(--main-color);
     padding: 10px;
     border-radius: 15px;
     text-align: center;
 }
 
-footer {
-    text-align: center;
-    bottom:0;
-    width:100%;
- }
-
-.fa-brands {
+.project-footer {
+    border-top: 2px solid var(--second-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    line-height: 60%;
+    margin-top: 20px;
+}
+.fa-brands, .fa-circle-left {
     transition: transform 0.3s ease-in-out;
 }
 
@@ -113,6 +118,6 @@ footer {
     transform: rotate(360deg);
 }
 
-
-
-
+.fa-circle-left:hover {
+    transform: rotate(360deg);
+}

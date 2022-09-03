@@ -74,19 +74,26 @@ main {
     border: 1px solid lightgrey;
 }
 
-footer {
-    text-align: center;
-    bottom:0;
-    width:100%;
- }
-
-.fa-brands {
+.project-footer {
+    border-top: 2px solid var(--second-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    line-height: 60%;
+    margin-top: 20px;
+}
+.fa-brands, .fa-circle-left {
     transition: transform 0.3s ease-in-out;
 }
 
 .fa-brands:hover {
     transform: rotate(360deg);
-  }
+}
+
+.fa-circle-left:hover {
+    transform: rotate(360deg);
+}
 
 @media (max-width: 1200px) {
     main {
