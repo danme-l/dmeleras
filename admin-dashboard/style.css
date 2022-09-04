@@ -45,6 +45,27 @@ body {
     border-radius: 5px;
 }
 
+/* Footer within sidebar */
+.project-footer {
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.fa-brands, .fa-circle-left {
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-brands:hover {
+    transform: rotate(360deg);
+}
+
+.fa-circle-left:hover {
+    transform: rotate(360deg);
+}
+
 /* header section */
 
 #header {

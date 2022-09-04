@@ -13,6 +13,7 @@ body {
     margin: 0px;
     background-image: url('https://images.pexels.com/photos/2946979/pexels-photo-2946979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     z-index: -1;
+    background-size: cover;
 }
 
 button {
@@ -169,4 +170,27 @@ header {
     gap: 20px;
     transition: grid-template-columns 1s ease-in-out;
     transition: grid-template-rows 1s ease-in-out;
+}
+
+/* Footer */
+.project-footer {
+    border-top: 2px solid black;
+    background-color: rgba(204, 151, 103, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    line-height: 60%;
+    margin-top: 20px;
+}
+.fa-brands, .fa-circle-left {
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-brands:hover {
+    transform: rotate(360deg);
+}
+
+.fa-circle-left:hover {
+    transform: rotate(360deg);
 }
